@@ -12,7 +12,7 @@ function leftBracket() {
 
 function rightBracket() {
     clearAns(")");
-    sddocument.getElementById("screen").textContent += ")";
+    document.getElementById("screen").textContent += ")";
     equation += ")";
     history.push(")");
 }
