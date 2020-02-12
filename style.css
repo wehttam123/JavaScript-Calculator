@@ -1,0 +1,13 @@
+table, th, td {
+    border: 1px solid black;
+}
+
+.answer {
+    text-align: right;
+    font-size: 10px;
+}
+
+.screen {
+    text-align: right;
+    font-size: 32px;
+}
