@@ -1,13 +1,73 @@
-table, th, td {
-    border: 1px solid black;
+th, td {
+    text-align: center;
+    max-width: 600px;
+    overflow-wrap: break-word;
+}
+
+table {
+    text-align: center;
+    min-width: 600px;
+    max-width: 600px;
+    text-align:center; 
+    margin-left:auto; 
+    margin-right:auto; 
+    background-color: black;
+    border-radius: 12px;
+}
+
+td {
+    border: none;
+}
+
+th {
+    height: 50px;
+    color: white;
 }
 
 .answer {
     text-align: right;
-    font-size: 10px;
+    font-size: 20px;
+    font-family: 'Audiowide', cursive;
+    color: white;
 }
 
 .screen {
     text-align: right;
-    font-size: 32px;
+    font-size: 40px;
+    font-family: 'Audiowide', cursive;
+    background-color:#b6cccb;
+    border-radius: 12px;
+}
+
+/* Box Shadow Inset */
+button {
+    height: 90px;
+    width: 80%;
+    color: white;
+    font-size: 26px;
+    font-family: 'Audiowide', cursive;
+    background-color: rgb(219, 155, 35);
+    border-radius: 12px;
+    margin: 10px;
+  }
+
+  @media all and (max-width: 600px) {
+    th {
+        width: 100%;
+        min-width: 100%;
+        max-width: 100%;
+        overflow-wrap: break-word;
+        word-break: break-word;
+    }
+    
+    table {
+        width: 100%;
+        min-width: 100%;
+        max-width: 100%;
+    }
+
+    button {
+        word-break: normal;
+        height: 50px;
+    }
 }

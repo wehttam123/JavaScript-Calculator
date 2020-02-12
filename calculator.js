@@ -149,7 +149,13 @@ function equals() {
     try {
         eval(equation);
         document.getElementById("screen").textContent = eval(equation);
-        document.getElementById("answer").textContent = equation + " =";
+        if (equation === "2 + 2")//Easter egg
+        {
+            document.getElementById("answer").textContent = equation + " is 4 - 1 thats 3, quick mafs.";
+        } 
+        else {
+            document.getElementById("answer").textContent = equation + " =";
+        }
         ans = eval(equation);
         clearNext = true;
     } catch (e) {
